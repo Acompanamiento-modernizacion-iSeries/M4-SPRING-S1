@@ -1,0 +1,22 @@
+
+Ejemplo de consumos a traves de Insomnia
+
+(GET)consultar saldo: http://localhost:8080/cuenta/saldo?numeroCuenta=8942
+(POST) Depositar:     http://localhost:8080/cuenta/deposito?numeroCuenta=8942&cantidad=1000
+(POST) Retirar:       http://localhost:8080/cuenta/retiro?numeroCuenta=8942&cantidad=500
+
+
+Se agregaron 4 cuentas con sus saldos
+
+Cuenta:1358
+Saldo:5000
+
+Cuenta:2468
+Saldo:3000
+
+Cuenta:1379
+Saldo:15000
+
+Cuenta:8942
+Saldo:73000
+
