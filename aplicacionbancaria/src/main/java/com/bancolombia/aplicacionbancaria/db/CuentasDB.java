@@ -3,11 +3,13 @@ package com.bancolombia.aplicacionbancaria.db;
 
 
 import com.bancolombia.aplicacionbancaria.cuentas.Cuenta;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class CuentasDB {
 
     private static List<Cuenta> cuentaList = new ArrayList<Cuenta>(

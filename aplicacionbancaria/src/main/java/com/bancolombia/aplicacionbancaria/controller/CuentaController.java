@@ -3,6 +3,7 @@ package com.bancolombia.aplicacionbancaria.controller;
 
 import com.bancolombia.aplicacionbancaria.cuentas.Cuenta;
 import com.bancolombia.aplicacionbancaria.db.CuentasDB;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
@@ -13,7 +14,8 @@ public class CuentaController {
 
     private Cuenta cuentaEncontrada = null;
 
-    CuentasDB cuentasDB = new CuentasDB();
+    @Autowired
+    private CuentasDB cuentasDB;
 
     @GetMapping("/saldo")
     public String obtenerSaldo(@RequestParam String cuenta) {
